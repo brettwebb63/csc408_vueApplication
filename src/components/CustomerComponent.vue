@@ -19,10 +19,10 @@ export default {
     methods: {
       view () {
         // this.$emit('view', this.id);
-        console.log('Component Viewing id:' + this.id)
+        console.log('Component Viewing id:' + this.id);
 
         // this.$router.push({ name: 'customer-details', params: { id: 3 } })
-        let myRoute = '/customer-details/3';
+        let myRoute = '/customer-details/' + this.id;
         this.$router.push(myRoute);
       },
       rentals () {

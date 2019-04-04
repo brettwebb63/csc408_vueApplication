@@ -2,6 +2,7 @@
 <div class="container">
   <div class="content">
     <h1>Yellow Box Movies</h1>
+    <div class="row">
     <movie-component
             v-for="(movie, index) in movies"
             v-bind="movie"
@@ -10,6 +11,7 @@
             @view="view"
             @rentals="rentals"
     ></movie-component>
+    </div>
   </div>
 </div>
 </template>
@@ -56,3 +58,8 @@
         }
     }
 </script>
+<style>
+  h1{
+    text-decoration: underline;
+  }
+</style>

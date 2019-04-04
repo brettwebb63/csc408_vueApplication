@@ -1,10 +1,9 @@
 <template>
     <div id="app">
       <div id="nav">
-        <router-link to="/">Home</router-link> |
-        <router-link to="/movies">Movies</router-link> |
-        <router-link to="/about">About</router-link> |
-        <router-link to="/customers">Customers</router-link>
+        <router-link class="logo" to="/Movies">Bucket Rentals</router-link> |
+        <router-link to="/customers">Customers</router-link> |
+        <router-link to="/about">About Us</router-link>
       </div>
       <router-view/>
     </div>
@@ -14,7 +13,7 @@
 /* Add Google Font */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
 
-/* This is where we inport our custom CSS files */
+/* This is where we import our custom CSS files */
 @import './assets/styles/custom.css';
 
 #app {
@@ -26,12 +25,16 @@
 }
 #nav {
   padding: 30px;
+
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: #ffffff;
     &.router-link-exact-active {
-      color: #42b983;
+      color: #65580D;
     }
   }
+    .logo{
+        text-align: left;
+    }
 }
 </style>

@@ -1,16 +1,15 @@
 <template>
-    <div class="card" style="width: 18rem">
-    <img :src="this.imageUrl" class="card-img-top">
-    <div class="card-body">
-        <h3 class="card-title"> {{ title }} </h3>
-        <h4 class="card-text"> {{ rating }} </h4>
-        <h4 class="card-text"> Length: {{ length }} </h4>
+    <div class="card" style="width: 21rem">
+        <img :src="this.imageUrl" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title"> {{ title }} </h5>
+            <h6 class="card-text"> Movie Rated: {{ rating }} </h6>
+        </div>
+        <div class="card-links">
+            <button class="btn btn-sm btn-success"><router-link :to="'/movie-details/' + this.id">Details</router-link></button>
+            <button class="btn btn-sm btn-dark"><router-link :to="'/movie-details/' + this.id + '/rented'">Rented By?</router-link></button>
+        </div>
     </div>
-    <div class="card-links">
-        <button class="btn btn-sm btn-success"><router-link :to="'/movie-details/' + this.id">Details</router-link></button>
-        <button class="btn btn-sm btn-dark"><router-link :to="'/movie-details/' + this.id + '/rented'">Rentals</router-link></button>
-    </div>
-</div>
 </template>
 
 <script>
@@ -43,5 +42,20 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
+    .card{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .card-title{
+        text-align: center;
+    }
+    .card-text{
+        text-align: center;
+    }
+    .card-links{
+        padding-bottom: 1rem;
+    }
+    a{
+        color: #ffffff;
+    }
 </style>

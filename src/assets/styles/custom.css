@@ -1,10 +1,13 @@
 #nav {
-    background-color: #328eb2;
+    background-color: #8AAAE5;
+    /*background-color: #328eb2*/
 }
-
+#app {
+    background-color: #E4E4E4 ;
+}
 #footer {
     padding: 10px;
-    background-color: #328eb2;
+    background-color: #8AAAE5;
     color: #fffffd;
 }
 
@@ -17,6 +20,3 @@ div.btn a {
     color: #fff;
 }
 
-div.movie {
-    display:inline;
-}
